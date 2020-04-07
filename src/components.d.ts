@@ -32,6 +32,10 @@ export namespace Components {
     * The input field value.
     */
     'value': boolean;
+    /**
+    * Button variants Possible values are `"default"`, `"dashed"`. Defaults to `"default"`.
+    */
+    'variant': 'default' | 'dashed';
   }
 }
 
@@ -75,6 +79,10 @@ declare namespace LocalJSX {
     * The input field value.
     */
     'value'?: boolean;
+    /**
+    * Button variants Possible values are `"default"`, `"dashed"`. Defaults to `"default"`.
+    */
+    'variant'?: 'default' | 'dashed';
   }
 
   interface IntrinsicElements {

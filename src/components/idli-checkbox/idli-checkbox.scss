@@ -164,20 +164,22 @@
       animation-name: none;
     }
 
-    .checkbox-disabled .checkbox-input {
-      cursor: not-allowed;
-    }
+    .checkbox-disabled {
+      .checkbox-input {
+        cursor: not-allowed;
+      }
 
-    .checkbox-disabled .checkbox-inner {
-      background-color: #f5f5f5;
-      border-color: #d9d9d9 !important;
-    }
+      .checkbox-inner {
+        background-color: #f5f5f5;
+        border-color: #d9d9d9 !important;
 
-    .checkbox-disabled .checkbox-inner::after {
-      border-color: #f5f5f5;
-      border-collapse: separate;
-      -webkit-animation-name: none;
-      animation-name: none;
+        &::after {
+          border-color: #f5f5f5;
+          border-collapse: separate;
+          -webkit-animation-name: none;
+          animation-name: none;
+        }
+      }
     }
 
     .checkbox-disabled + span {
@@ -202,10 +204,10 @@
       display: inline-block;
       line-height: unset;
       cursor: pointer;
-    }
 
-    .checkbox-wrapper.checkbox-wrapper-disabled {
-      cursor: not-allowed;
+      &.checkbox-wrapper-disabled {
+        cursor: not-allowed;
+      }
     }
 
     .checkbox-wrapper + .checkbox-wrapper {
@@ -233,6 +235,16 @@
       float: left;
       flex: 0 0 83.333333%;
       max-width: 83.333333%;
+    }
+  }
+
+  &.variant-dashed {
+    .checkbox-element .checkbox-inner {
+      border-style: dashed;
+
+      &::after {
+        border-style: dashed;
+      }
     }
   }
 }

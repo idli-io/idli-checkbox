@@ -14,6 +14,12 @@ export class IdliCheckbox {
     @Prop() controlLabel: string;
 
     /**
+     * Button variants
+     * Possible values are `"default"`, `"dashed"`. Defaults to `"default"`.
+     */
+    @Prop() variant: 'default' | 'dashed' = 'default';
+
+    /**
      * The input field value.
      */
     @Prop() value: boolean = false;
@@ -38,6 +44,15 @@ export class IdliCheckbox {
      * On change of input a CustomEvent 'inputChange' will be triggered. Event details contains parent event, oldValue, newValue of input.
      */
     @Event() inputChange: EventEmitter;
+
+    getVariantClass() {
+        let variant = "variant-";
+        if (!this.variant)
+            variant = variant + 'default';
+        else
+            variant = variant + this.variant;
+        return variant;
+    }
 
     getSizeClass() {
         let size = "size-";
@@ -98,7 +113,7 @@ export class IdliCheckbox {
 
     render() {
         return <div
-            class={"idli-checkbox-component  " + this.getInlineClass() + " " + this.getSizeClass() + " "}>
+            class={"idli-checkbox-component  " + this.getInlineClass() + " " + this.getSizeClass() + " " + this.getVariantClass()}>
             {[this.getLabelElement(), this.getCheckboxElement()]}
         </div>;
     }

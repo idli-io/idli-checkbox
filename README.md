@@ -3,7 +3,7 @@
 ## Using this component
 
 ### Script tag
-- Put a script tag similar to this `<script src='https://unpkg.com/@idli/idli-checkbox@0.1.0/dist/idli-checkbox.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script src='https://unpkg.com/@idli/idli-checkbox@0.1.5/dist/idli-checkbox.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
@@ -23,9 +23,9 @@
 ```
 <custom-element-demo>
   <template>
-    <script src='https://unpkg.com/@idli/idli-checkbox@0.1.0/dist/idli-checkbox.js'></script>
+    <script src='https://unpkg.com/@idli/idli-checkbox@0.1.5/dist/idli-checkbox.js'></script>
     <h2>Basic</h2>
-    <idli-checkbox label="Male"></idli-checkbox>
+    <idli-checkbox label="Male" value="true"></idli-checkbox>
     <h2>Disabled</h2>
     <idli-checkbox label="Female" inline="true" disabled></idli-checkbox>
   </template>
@@ -39,11 +39,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
-  <script src='https://unpkg.com/@idli/idli-checkbox@0.1.0/dist/idli-checkbox.js'></script>
+  <script src='https://unpkg.com/@idli/idli-checkbox@0.1.5/dist/idli-checkbox.js'></script>
 </head>
 <body>
   <h2>Basic</h2>
-  <idli-checkbox label="Male"></idli-checkbox>
+  <idli-checkbox label="Male" value="true"></idli-checkbox>
   <h2>Disabled</h2>
   <idli-checkbox label="Female" inline="true" disabled></idli-checkbox>
 </body>

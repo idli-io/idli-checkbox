@@ -1,6 +1,6 @@
 {
   "name": "@idli/idli-checkbox",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Idli Checkbox",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -43,5 +43,5 @@
   "bugs": {
     "url": "https://github.com/idli-io/idli-checkbox/issues"
   },
-  "homepage": "https://idli.io/checkbox.html"
+  "homepage": "https://idli.io/component/checkbox.html"
 }

@@ -7,14 +7,15 @@
 
 ## Properties
 
-| Property       | Attribute       | Description                                                                       | Type                   | Default     |
-| -------------- | --------------- | --------------------------------------------------------------------------------- | ---------------------- | ----------- |
-| `controlLabel` | `control-label` |                                                                                   | `string`               | `undefined` |
-| `disabled`     | `disabled`      | If true, the user cannot interact with the button. Defaults to `false`.           | `boolean`              | `false`     |
-| `inline`       | `inline`        | If true, the form will be in inline format. Defaults to `false`.                  | `boolean`              | `false`     |
-| `label`        | `label`         | The input field label.                                                            | `string`               | `undefined` |
-| `size`         | `size`          | The button size. Possible values are: `"sm"`, `"md"`, `"lg"`. Defaults to `"md"`. | `"lg" \| "md" \| "sm"` | `'md'`      |
-| `value`        | `value`         | The input field value.                                                            | `boolean`              | `false`     |
+| Property       | Attribute       | Description                                                                           | Type                    | Default     |
+| -------------- | --------------- | ------------------------------------------------------------------------------------- | ----------------------- | ----------- |
+| `controlLabel` | `control-label` |                                                                                       | `string`                | `undefined` |
+| `disabled`     | `disabled`      | If true, the user cannot interact with the button. Defaults to `false`.               | `boolean`               | `false`     |
+| `inline`       | `inline`        | If true, the form will be in inline format. Defaults to `false`.                      | `boolean`               | `false`     |
+| `label`        | `label`         | The input field label.                                                                | `string`                | `undefined` |
+| `size`         | `size`          | The button size. Possible values are: `"sm"`, `"md"`, `"lg"`. Defaults to `"md"`.     | `"lg" \| "md" \| "sm"`  | `'md'`      |
+| `value`        | `value`         | The input field value.                                                                | `boolean`               | `false`     |
+| `variant`      | `variant`       | Button variants Possible values are `"default"`, `"dashed"`. Defaults to `"default"`. | `"dashed" \| "default"` | `'default'` |
 
 
 ## Events

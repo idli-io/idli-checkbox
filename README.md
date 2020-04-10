@@ -51,7 +51,7 @@
 ```
 
 #### Demo:
-[Click here for demo](http://idli.io/input.html)
+[Click here for demo](https://idli.io/component/checkbox.html)
 
 ## Code of Conduct
 [Contributor Covenant](/CODE_OF_CONDUCT.md)
